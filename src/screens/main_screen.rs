@@ -15,10 +15,7 @@ impl MainScreen {
     pub fn new() -> Self {
         MainScreen {
             elements: vec![
-                Box::new(TextElement::new("This is a test", 1, None)),
-                Box::new(TextElement {
-                    text: "This is another test.".to_string(), size: 1, color: None, rendered: false
-                }),
+                Box::new(TextElement::new("This is a test", 40, None, None, None)),
                 Box::new(ImageElement {
                     src: "/path/to/image.png".to_string(),
                     color: Some(Color::RGB(252, 186, 3)),

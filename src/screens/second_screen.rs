@@ -13,10 +13,7 @@ impl SecondScreen {
     pub fn new() -> Self {
         SecondScreen {
             elements: vec![
-                Box::new(TextElement {text:"This is a second test.".to_string(), size: 1, color: None, rendered: false}),
-                Box::new(TextElement {
-                    text: "This is another second test.".to_string(), size: 1, color: None, rendered: false
-                }),
+                Box::new(TextElement::new("This is second screen a test", 40, None, None, None)),
                 Box::new(ImageElement {
                     src: "/path/to/second.png".to_string(),
                     color: Some(Color::RGB(0, 255, 123)),

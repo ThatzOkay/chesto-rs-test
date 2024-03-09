@@ -10,7 +10,7 @@ pub struct MainDisplay {
 
 impl MainDisplay {
     pub fn new() -> MainDisplay {
-        let mut root_display = BaseRootDisplay::new(1280, 720);
+        let mut root_display = BaseRootDisplay::new(800, 600);
 
         root_display.input_events.quit_action = Some(MainDisplay::quit);
         root_display.set_screen(Box::new(MainScreen::new()));
